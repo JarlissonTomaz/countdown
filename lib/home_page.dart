@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:sqflite/sqflite.dart';
 import 'package:temporizador_teste/provider/time_provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -20,7 +21,10 @@ class _HomePageState extends State<HomePage> {
           centerTitle: true,
           actions: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                countdownProvider
+                    .setCountDownDuration(const Duration(seconds: 60));
+              },
               icon: const Icon(Icons.grid_3x3),
             )
           ],

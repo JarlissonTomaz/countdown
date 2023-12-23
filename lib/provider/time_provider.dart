@@ -1,21 +1,34 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 class TimerProvider extends ChangeNotifier {
   Duration duration = const Duration(seconds: 75);
   bool isRunning = false;
 
+  StreamSubscription<int>? _tickSubscription;
+
+  void setCountDownDuration(Duration newDuration) {
+    duration = newDuration;
+    _tickSubscription?.cancel();
+    isRunning = false;
+    notifyListeners();
+  }
+
   void startStopTimer() {
     if (!isRunning) {
       _startTimer(duration.inSeconds);
     } else {
-      //stop
+      _tickSubscription?.pause();
     }
     isRunning = !isRunning;
     notifyListeners();
   }
 
   void _startTimer(int seconds) {
-    Stream<int>.periodic(const Duration(seconds: 1), (sec) => seconds - sec - 1)
+    _tickSubscription?.cancel();
+    _tickSubscription = Stream<int>.periodic(
+            const Duration(seconds: 1), (sec) => seconds - sec - 1)
         .take(seconds)
         .listen((timeLeftInSeconds) {
       duration = Duration(seconds: timeLeftInSeconds);
