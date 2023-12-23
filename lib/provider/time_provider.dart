@@ -8,7 +8,7 @@ class TimerProvider extends ChangeNotifier {
 
   StreamSubscription<int>? _tickSubscription;
 
-  void setCountDownDuration(Duration newDuration) {
+  void setCountdownDuration(Duration newDuration) {
     duration = newDuration;
     _tickSubscription?.cancel();
     isRunning = false;
