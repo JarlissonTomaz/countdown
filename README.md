@@ -12,7 +12,7 @@ Certifique-se de ter o Flutter instalado em sua máquina. Para informações sob
 
 1. **Clone o Repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/relogio-interativo-flutter.git
+   git clone https://github.com/JarlissonTomaz/count_dowm.git
    ```
 
 2. **Navegue até o Diretório:**
