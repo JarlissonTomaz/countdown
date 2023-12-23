@@ -35,8 +35,8 @@ Certifique-se de ter o Flutter instalado em sua máquina. Para informações sob
 ## Estrutura do Projeto
 
 - `lib/main.dart`: Ponto de entrada do aplicativo Flutter.
-- `lib/clock.dart`: Widget que representa o relógio e sua lógica.
-- `lib/provider.dart` (opcional): Classe para configurar e integrar um provider.
+- `lib/home_page.dart`: Widget que representa o countdown e sua lógica.
+- `lib/provider/time_provider.dart` (opcional): Classe para configurar e integrar um provider.
 
 ## Contribuições
 
