@@ -4,7 +4,7 @@ Compreendi! Aqui está um README simplificado para um projeto Flutter de relógi
 
 # Countdown Flutter (Provider/Streams)
 
-Bem-vindo ao Relógio Interativo Flutter, um projeto simples para testar a funcionalidade de um relógio com provider. Este projeto permite explorar a interatividade básica de um relógio enquanto utiliza um provider para exibir informações dinâmicas.
+Bem-vindo ao Countdown Flutter (Provider/Streams), um projeto simples para testar a funcionalidade de um countdown com provider. Este projeto permite explorar a interatividade básica de um countdown enquanto utiliza um provider para exibir informações dinâmicas.
 
 ## Como Usar
 
@@ -25,12 +25,12 @@ Certifique-se de ter o Flutter instalado em sua máquina. Para informações sob
    flutter run
    ```
 
-4. **Interaja com o Relógio:**
+4. **Interaja com o Countdown:**
    - Toque na tela para alternar entre modos.
    - Experimente gestos simples para explorar funcionalidades adicionais.
 
 5. **Configuração do Provider (opcional):**
-   Se desejar adicionar um provider, edite o arquivo `lib/provider.dart` seguindo as instruções de configuração.
+   Se desejar adicionar um provider, edite o arquivo `lib/provider/time_provider.dart` seguindo as instruções de configuração.
 
 ## Estrutura do Projeto
 
