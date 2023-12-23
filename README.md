@@ -17,7 +17,7 @@ Certifique-se de ter o Flutter instalado em sua máquina. Para informações sob
 
 2. **Navegue até o Diretório:**
    ```bash
-   cd relogio-interativo-flutter
+   cd temporizador_teste
    ```
 
 3. **Execute o Projeto:**
